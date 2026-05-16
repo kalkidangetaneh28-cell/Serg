@@ -1,0 +1,133 @@
+.address-text {
+            flex: 2;
+            font-size: 0.94rem;
+            line-height: 1.45;
+        }
+
+        .phone-numbers {
+            flex: 1;
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .phone-numbers a {
+            text-decoration: none;
+            color: #ad6d2c;
+            font-weight: 700;
+        }
+        .phone-numbers a:hover {
+            text-decoration: underline;
+            color: #c47d2e;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #9f825a;
+            border-top: 1px solid #efdfc0;
+            padding-top: 1rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 650px) {
+            .card-inner {
+                padding: 1.5rem;
+            }
+            .blessing-text {
+                font-size: 1rem;
+            }
+            .wedding-title {
+                font-size: 2rem;
+            }
+            .invitation-message p {
+                font-size: 0.88rem;
+            }
+            .detail-item {
+                font-size: 0.8rem;
+                gap: 6px;
+            }
+            .event-details {
+                flex-direction: column;
+                gap: 0.6rem;
+            }
+            .address-block {
+                flex-direction: column;
+                text-align: center;
+            }
+            .phone-numbers {
+                text-align: center;
+            }
+            .guest-blank {
+                min-width: 140px;
+                font-size: 0.8rem;
+            }
+            .akbabiro-name {
+                font-size: 1rem;
+            }
+        }
+
+        /* decorative touches */
+        .flourish {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #cfaa6e;
+            margin: 8px 0;
+        }
+        i.fa-heart {
+            color: #cb8742;
+        }
+    </style>
+</head>
+<body>
+<div class="invitation-card">
+    <div class="card-inner">
+
+        <!-- Verse exactly as per corrected text: "እግዚአብሄር ታላቅ ነገር አደረገልን    ደስም አለን።" መዝ 125:3 -->
+        <div class="verse-block">
+            <div class="blessing-text">
+                <i class="fas fa-feather-alt"></i> 
+                "እግዚአብሄር ታላቅ ነገር አደረገልን            ደስም አለን።" 
+                <i class="fas fa-feather-alt"></i>
+            </div>
+            <div class="psalm-ref">መዝሙር 125:3</div>
+        </div>
+
+        <!-- ሠርግ title -->
+        <div class="wedding-title">ሠርግ</div>
+
+        <!-- Guest line: "ለ ___________" style -->
+        <div class="guest-line">
+            <span class="guest-label">ለ :</span>
+            <span class="guest-blank">_________</span>
+        </div>
+
+        <!-- Main invitation message (exact phrasing from corrected note) -->
+        <div class="invitation-message">
+            <p>
+                የማክበር ሰላምታችንን እያቀረብን የልጃችን 
+                <span class="highlight-name">የወ/ሪት አዲስ ጌታነህ</span> እና 
+                <span class="highlight-name">የዶ/ር ስንሻው ሙሉቀን</span> 
+                የጋብቻ ሥነ-ስርዓት የሚፈጸመው እሁድ ግንቦት 16/2018 ዓ.ም ስለሆነ በዚሁ ዕለት 
+                ከቀኑ <strong>6:00 ሰዓት</strong> በመኖሪያ ቤታችን ባዘጋጀነው የምሳ ግብዣ ላይ ከ 
+                <span class="guest-blank" style="background:#fff3e2; border-bottom: 2px dashed #b87a37;">____</span> 
+                ጋር ተገኝተው የደስታችን ተካፋይ እንዲሆኑ ስንል በማክበር ጠርተነዎታል።
+            </p>
+            <div class="small-ornament">✻ ✿ ✻</div>
+        </div>
+
+        <!-- Event details box: date + time + meal -->
+        <div class="event-details">
+            <div class="detail-item">
+                <i class="far fa-calendar-check"></i>
+                <span>እሁድ ግንቦት 16, 2018 ዓ.ም</span>
+            </div>
+            <div class="detail-item">
+                <i class="far fa-clock"></i>
+                <span>ከቀኑ 6:00 (12:00 ሰዓት)</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-utensil-spoon"></i>
+                <span>የምሳ ግብዣ</span>
+            </div>
+        </div>
