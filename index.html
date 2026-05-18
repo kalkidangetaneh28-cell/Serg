@@ -1,4 +1,132 @@
-.wedding-title:before, .wedding-title:after {
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>የሠርግ  ካርድ |  Wedding Invitation</title>
+    <!-- Fonts: elegant serif for headings + Ethiopic-friendly sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #aa8e5e 0%, #e5d5b3 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.2rem;
+            font-family: 'Inter', 'Segoe UI', 'Noto Sans Ethiopic', 'Nyala', 'Abyssinica SIL', serif;
+        }
+
+        /* main card */
+        .invitation-card {
+            max-width: 880px;
+            width: 100%;
+            background: #FFFCF5;
+            border-radius: 56px 32px 56px 32px;
+            box-shadow: 0 30px 45px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: all 0.2s;
+            border: 1px solid #f5e5c8;
+        }
+
+        .card-inner {
+            padding: 2.2rem 2rem 2.5rem;
+            background: rgba(255, 252, 242, 0.92);
+            border-radius: 52px 28px 52px 28px;
+            position: relative;
+        }
+
+        /* golden decorative lines & stars */
+        .card-inner::before {
+            content: "✧  ✧  ✧";
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff8e7;
+            padding: 0 24px;
+            font-size: 1.2rem;
+            letter-spacing: 8px;
+            color: #cd9f4a;
+            border-radius: 60px;
+            font-family: serif;
+            white-space: nowrap;
+        }
+
+        .card-inner::after {
+            content: "✧  ✧  ✧";
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff8e7;
+            padding: 0 24px;
+            font-size: 1.2rem;
+            letter-spacing: 8px;
+            color: #cd9f4a;
+            border-radius: 60px;
+            font-family: serif;
+            white-space: nowrap;
+        }
+
+        /* verse header */
+        .verse-block {
+            text-align: center;
+            margin-bottom: 1rem;
+            background: #FAF3E2;
+            padding: 1rem 1rem 0.7rem;
+            border-radius: 48px;
+            border: 1px solid #eedbba;
+        }
+
+        .blessing-text {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #9b672b;
+            letter-spacing: 0.3px;
+            font-family: 'Playfair Display', serif;
+            line-height: 1.4;
+        }
+
+        .blessing-text i {
+            color: #c28a3e;
+            margin: 0 5px;
+            font-size: 1rem;
+        }
+
+        .psalm-ref {
+            font-size: 0.9rem;
+            color: #a77738;
+            margin-top: 6px;
+            font-weight: 500;
+            border-top: 1px dashed #e5cfaa;
+            display: inline-block;
+            padding-top: 5px;
+        }
+
+        /* main title "ሠርግ" */
+        .wedding-title {
+            text-align: center;
+            font-size: 2.6rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(145deg, #b47c33, #8d5e28);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 2px;
+            margin: 0.5rem 0 1rem 0;
+            position: relative;
+        }
+[5/16/2026 7:37 PM] Kal: .wedding-title:before, .wedding-title:after {
             content: "☙";
             font-size: 1.8rem;
             color: #cb9f5c;
@@ -147,7 +275,7 @@
             gap: 12px;
             border: 1px solid #eedfc2;
         }
-.address-text {
+[5/16/2026 7:37 PM] Kal: .address-text {
             flex: 2;
             font-size: 0.94rem;
             line-height: 1.45;
@@ -260,7 +388,7 @@
                 የጋብቻ ሥነ-ስርዓት የሚፈጸመው እሁድ ግንቦት 16/2018 ዓ.ም ስለሆነ በዚሁ ዕለት 
                 ከቀኑ <strong>6:00 ሰዓት</strong> በመኖሪያ ቤታችን ባዘጋጀነው የምሳ ግብዣ ላይ ከ 
                 <span class="guest-blank" style="background:#fff3e2; border-bottom: 2px dashed #b87a37;">____</span> 
-                ጋር ተገኝተው የደስታችን ተካፋይ እንዲሆኑ ስንል በማክበር ጠርተነዎታል።
+                 ተገኝተው የደስታችን ተካፋይ እንዲሆኑ ስንል በማክበር ጠርተነዎታል።
             </p>
             <div class="small-ornament">✻ ✿ ✻</div>
         </div>
@@ -280,3 +408,32 @@
                 <span>የምሳ ግብዣ</span>
             </div>
         </div>
+[5/16/2026 7:37 PM] Kal: <!-- Parents / Akbabiro section: ONLY "ቃልኪዳን ጌታነህ" as requested -->
+        <div class="parents-host">
+            <i class="fas fa-star-of-life" style="color: #ba7d38; margin-right: 8px;"></i>
+            <strong>አክባሪዎ :-</strong>
+            <div class="akbabiro-name">መድሃኒት ሰዉመሆን</div>
+        </div>
+
+        <!-- Address section exactly: "ንግድ መምሪያው አዲሱ አስፓልት 100ሜ ገባ ብሎ" plus phone -->
+        <div class="address-block">
+            <div class="address-text">
+                <i class="fas fa-location-dot" style="color: #b87a36; margin-right: 6px;"></i>
+                <strong>አድራሻ :—</strong> ንግድ መምሪያው አዲሱ አስፓልት 100ሜ ገባ ብሎ
+            </div>
+            <div class="phone-numbers">
+                <i class="fas fa-phone-alt"></i> 
+                <a href="tel:0948277903">0948277903</a> 
+                <span style="display: inline-block; margin-left: 4px;">(ስ.ቁ)</span>
+            </div>
+        </div>
+
+        <!-- graceful footer -->
+        <div class="footer-note">
+            <i class="fas fa-heart"></i> የደስታችን ተካፋይ በመሆን ክብር ይስጡን። እንኳን ደስ አላችሁ! <i class="fas fa-heart"></i>
+            <div class="flourish">❁ እግዚአብሔር ይባርክልን ❁</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
